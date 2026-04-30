@@ -1,0 +1,103 @@
+/* ===== フォーム全体 ===== */
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ===== テーブル ===== */
+.contact-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: separate;
+    /* ← 修正ポイント */
+    border-spacing: 0;
+}
+
+/* 左ラベル */
+.contact-table th {
+    width: 220px;
+    text-align: left;
+    padding: 15px;
+    vertical-align: top;
+}
+
+/* 右入力欄 */
+.contact-table td {
+    padding: 15px;
+    overflow: visible;
+    /* ← ドロップダウン対策 */
+}
+
+/* ===== 入力共通 ===== */
+.contact-table input,
+.contact-table select,
+.contact-table textarea {
+    padding: 10px;
+    border: 1px solid #ccccc600;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+/* ===== 名前（2分割） ===== */
+.contact-table input[name="last_name"],
+.contact-table input[name="first_name"] {
+    width: 48%;
+}
+
+/* ===== フル幅系 ===== */
+.contact-table input[name="email"],
+.contact-table input[name="address"],
+.contact-table input[name="building"],
+.contact-table select,
+.contact-table textarea {
+    width: 100%;
+}
+
+/* ===== 電話番号 ===== */
+.contact-table input[name="tel1"],
+.contact-table input[name="tel2"],
+.contact-table input[name="tel3"] {
+    width: 80px;
+    text-align: center;
+}
+
+/* ===== textarea ===== */
+.contact-table textarea {
+    height: 120px;
+}
+
+/* ===== selectバグ対策 ===== */
+.contact-table select {
+    position: relative;
+    z-index: 10;
+}
+
+/* ===== 見た目 ===== */
+body {
+    background: #faf8f8;
+}
+
+.contact__title {
+    text-align: center;
+    color: #8b7969;
+    margin: 30px 0;
+}
+
+/* ===== ボタン ===== */
+.btn-area {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-area button {
+    background: #8b7969;
+    color: #fff;
+    padding: 10px 30px;
+    border: none;
+}
+
+.contact-table select {
+    position: relative;
+    z-index: 100;
+}

@@ -1,0 +1,48 @@
+
+/* ===== ベース ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header__inner {
+    padding: 15px;
+}
+
+.header__logo {
+    font-size: 20px;
+}
+
+/* ===== ボタン共通 ===== */
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ===== エラー ===== */
+.error {
+    color: red;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* ===== 必須マーク ===== */
+.required {
+    color: red;
+}

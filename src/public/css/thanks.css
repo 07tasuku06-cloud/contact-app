@@ -1,0 +1,69 @@
+/* ===== thanksページ全体 ===== */
+.thanks {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1ece7;
+    position: relative;
+    overflow: hidden;
+
+    /* 他CSS干渉遮断 */
+    isolation: isolate;
+}
+
+/* 背景 THANK YOU */
+.thanks::before {
+    content: "THANK YOU";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 140px;
+    font-weight: bold;
+    color: #d6cfc7;
+    letter-spacing: 12px;
+    opacity: 0.5;
+
+    filter: blur(5px);
+    white-space: nowrap;
+
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* 手前コンテンツ */
+.thanks__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+
+    /* 完全防御 */
+    filter: none !important;
+    backdrop-filter: none !important;
+    opacity: 1 !important;
+}
+
+/* メッセージ */
+.thanks__message {
+    font-size: 24px;
+    color: #8b7969;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+/* ボタン */
+.thanks__button {
+    display: inline-block;
+    padding: 12px 32px;
+    background: #8b7969;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.thanks__button:hover {
+    opacity: 0.8;
+}

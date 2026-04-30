@@ -1,0 +1,81 @@
+/* ===== ベース ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1ece7;
+    /* ベージュ */
+    color: #333;
+}
+
+/* コンテナ（全画面共通） */
+.main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===== ヘッダー ===== */
+.header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* 中央寄せ＋高さ調整 */
+.header__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* ロゴ（タイトル） */
+.header__logo {
+    font-size: 30px;
+    color: #8b7969;
+    /* ブラウン */
+    letter-spacing: 2px;
+}
+
+/* ===== ボタン共通 ===== */
+button {
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* ===== エラー ===== */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ===== 必須マーク ===== */
+.required {
+    color: red;
+    margin-left: 5px;
+}
+.header__inner {
+    position: relative;
+}
+
+.header__logout {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #8b7969;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.logout-button:hover {
+    opacity: 0.7;
+}
